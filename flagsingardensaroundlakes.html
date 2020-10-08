@@ -10,10 +10,10 @@
 <body>
 
  <img id="hintergrund" src="images/caterpillar.JPG" alt="" title="Flags in gardens around lakes" />
- 
-	  
-<div id="content">			  
-  
+
+
+<div id="content">
+
 
 <h1 hidden> <a href="selected_works_index.html"> > to selected works</a> </h1>
 <h2 style=" color:rgba(228,174,0,1.00)">Flags in gardens around lakes</h2>
@@ -22,8 +22,8 @@
 
 <div id="Spalte_1">
   <p>2018 <br>
-    90 x 63 cm <br> carpet <br> <br> A subtle drawing completes the photograph of a caterpillar: it is a white flag tied around the caterpillar's body. The insect's forward movement would make the flag swing. The image is woven as a carpet like an oversized doormat. <br>
-   
+    90 x 63 cm <br> carpet <br> <br> jdföasdjfasdfA subtle drawing completes the photograph of a caterpillar: it is a white flag tied around the caterpillar's body. The insect's forward movement would make the flag swing. The image is woven as a carpet like an oversized doormat. <br>
+
 </p>
 </div>
 
@@ -38,7 +38,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
-	
+
 html, body  {
 width: 100%;
 margin: 0;
@@ -47,7 +47,7 @@ overflow: auto;
 }
 
 
-	
+
 body {font-family: Verdana, sans-serif;
 
 	}
@@ -60,7 +60,7 @@ position:static;
 z-index: -1;
 }
 
-	
+
 #content {
 position: fixed;
 top: 0;
@@ -70,7 +70,7 @@ height: 100%;
 z-index: 2;
 overflow: auto;
 }
-	
+
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -101,7 +101,7 @@ z-index: 1;
 
 /* Position the "next button" to the right */
 .next {
-  
+
   border-radius: 65px 65px 65px 65px;
 }
 
@@ -156,12 +156,12 @@ z-index: 1;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -176,9 +176,9 @@ z-index: 1;
 <div class="slideshow-container">
 
 <div style="text-align:left">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 <br>
 
@@ -223,26 +223,26 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 </script>
 
 </body>
-</html> 
+</html>
 
 
 
 	</div>
-	
+
 
 </body>
 </html>
