@@ -4,13 +4,16 @@
 <meta charset="UTF-8">
 <title>neutral background</title>
 <link href="selected_works.css" rel="stylesheet" type="text/css">
-<script language="javascript" type="text/javascript" src="fast_things.js"></script>
 </head>
 
 <body>
 
+<!-- PART 1 GALLERY -->
+<div id="hintergrund-gallery">
+    <img class="show" src="images/neutral.jpg" alt="" title="neutral background, visualisation in space" />
+    <img src="images/neutralbackground2.jpg" alt="" title="neutral background, visualisation in space" />
+</div>
 
- <img id="hintergrund" src="images/neutral.jpg" alt="" title="neutral background, visualisation in space" />
 
 
 <div id="content">
@@ -40,10 +43,6 @@ indexes.
 	</p>
 	</div>
 
-<div id="Spalte_2">
-
-</div><!--Ende #content-->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,20 +64,36 @@ body {font-family: Verdana, sans-serif;
 
 	}
 
-#hintergrund {
-
-width: 100%;
-height: auto;
-position:static;
-z-index: -1;
+/* hacks for gallery */
+#Spalte_1 {
+    width: 100%;
 }
 
+#hintergrund-gallery {
+    position: relative;
+    cursor: pointer;
+}
 
+#hintergrund-gallery > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+
+    transition: 0.25s;
+}
+#hintergrund-gallery > img.show {
+    position: static;
+     opacity: 1;
+}
+
+/* width angepasst */
 #content {
 position: fixed;
 top: 0;
 left: 0;
-width: 100%;
+width: 30%;
 height: 100%;
 z-index: 2;
 overflow: auto;
@@ -227,34 +242,24 @@ z-index: 1;
 </div>
 
 
-
+<!-- PART 3 GALLERY-->
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+var index = 1,
+    total = document.querySelectorAll('#hintergrund-gallery > img').length;
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    console.log(total)
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+document.querySelector('#hintergrund-gallery').addEventListener('click', function(){
+    document.querySelector('#hintergrund-gallery img.show').classList.remove('show');
+    index++;
+
+    if(index > total){
+        index = 1;
+    }
+    document.querySelector('#hintergrund-gallery img:nth-child('+index+')').classList.add('show');
+})
+
 </script>
 
 </body>
