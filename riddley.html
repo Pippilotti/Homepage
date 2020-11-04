@@ -4,18 +4,29 @@
 <meta charset="UTF-8">
 <title>RIDDLEY how does one make fire again?</title>
 <link href="selected_works.css" rel="stylesheet" type="text/css">
-<script language="javascript" type="text/javascript" src="fast_things.js"></script>
 </head>
 
 <body>
 
+<!-- PART 1 GALLERY -->
+<div id="hintergrund-gallery">
+ <img class="show" src="images/riddley0.jpg" alt="" title="Installation view: Riddley, how does one make fire again? Photo Credit: Ralph Kühne" />
+ <img src="images/riddley1.jpg" alt="" title="Installation view: Riddley, how does one make fire again? Photo Credit: Ralph Kühne" />
+ <img src="images/riddley2.jpg" alt="" title="Film still: Riddley, how does one make fire again?" />
+ <img src="images/riddley3.jpg" alt="" title="Film still: Riddley, how does one make fire again?" />
+ <img src="images/riddley4.jpg" alt="" title="Film still: Riddley, how does one make fire again?" />
+ <img src="images/riddley5.jpg" alt="" title="Installation view: Riddley, how does one make fire again? Photo Credit: Ralph Kühne" />
+ <img src="images/riddley6.jpg" alt="" title="Installation view: Riddley, how does one make fire again? Photo Credit: Ralph Kühne" />
+ <img src="images/riddley7.jpg" alt="" title="Installation view: Riddley, how does one make fire again? Photo Credit: Ralph Kühne" />
 
- <img id="hintergrund" src="images/Still1.png" alt="" title="Riddley, film still" />
+
+</div>
+
 
 
 <div id="content">
 
-<h1 hidden> <a href="selected_works_index.html"> > to selected works </a> </h1>
+<h1 hidden> <a href="selected_works_index.html"> > to selected works</a> </h1>
 <h2>RIDDLEY how does one make fire again?</h2>
 
 <div id="Spalte_1">
@@ -44,10 +55,6 @@ staircase, providing Riddley‘s future myths as para-histories.
 	</p>
 	</div>
 
-<div id="Spalte_2">
-
-</div><!--Ende #content-->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,20 +76,37 @@ body {font-family: Verdana, sans-serif;
 
 	}
 
-#hintergrund {
-
-width: 100%;
-height: auto;
-position:static;
-z-index: -1;
+/* hacks for gallery */
+#Spalte_1 {
+    width: 100%;
+    overflow:scroll;
 }
 
+#hintergrund-gallery {
+    position: relative;
+    cursor: pointer;
+}
 
+#hintergrund-gallery > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+
+    transition: 0.25s;
+}
+#hintergrund-gallery > img.show {
+    position: static;
+     opacity: 1;
+}
+
+/* width angepasst */
 #content {
 position: fixed;
 top: 0;
 left: 0;
-width: 100%;
+width: 30%;
 height: 100%;
 z-index: 2;
 overflow: auto;
@@ -90,89 +114,7 @@ overflow: auto;
 
 
 
-	.mySlides {display: none}
-img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: fixed;
-  top: 18%;
-  width: auto;
-  padding: 18px;
-  margin-top: -22px;
-  color: #D36E0B;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 65px 65px 65px 65px;
-z-index: 1;
-	display: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-
-  border-radius: 65px 65px 65px 65px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-	visibility: hidden;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
 @-webkit-keyframes fade {
   from {opacity: .4}
@@ -186,79 +128,33 @@ z-index: 1;
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev, .next, .text {font-size: 11px}
 
 }
 </style>
 </head>
 <body>
 
-<div class="slideshow-container">
-
-<div style="text-align:left">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-<br>
-
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="images/radio_station/david aebi.png" style="width:80%;margin-bottom: 24px;">
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="images/radio_station/heikotimon.png" style="width:80%;margin-bottom: 24px;">
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="images/radio_station/radio_group.png" style="width:80%;margin-bottom: 24px;">
-  <div class="text"></div>
-</div>
 
 
-
-
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-
-
-
+<!-- PART 3 GALLERY-->
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+var index = 1,
+    total = document.querySelectorAll('#hintergrund-gallery > img').length;
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    console.log(total)
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+document.querySelector('#hintergrund-gallery').addEventListener('click', function(){
+    document.querySelector('#hintergrund-gallery img.show').classList.remove('show');
+    index++;
+
+    if(index > total){
+        index = 1;
+    }
+    document.querySelector('#hintergrund-gallery img:nth-child('+index+')').classList.add('show');
+})
+
 </script>
 
 </body>
