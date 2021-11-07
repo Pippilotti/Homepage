@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IBU SILLA</title>
+<link href="selected_works.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- PART 1 GALLERY -->
+<div id="hintergrund-gallery">
+    <img class="show" src="images/silla4.png" alt="" title="IBU SILLA, film still" />
+        <img src="images/silla2.png" alt="" title="IBU SILLA, film still" />
+            <img src="images/silla3.png" alt="" title="IBU SILLA, film still" />
+                <img src="images/silla11.png" alt="" title="IBU SILLA, film still" />
+                    <img src="images/silla1.png" alt="" title="IBU SILLA, film still" />
+                        <img src="images/silla6.png" alt="" title="IBU SILLA, film still" />
+                            <img src="images/silla7.png" alt="" title="IBU SILLA, film still" />
+                                <img src="images/silla8.png" alt="" title="IBU SILLA, film still" />
+                                    <img src="images/silla9.png" alt="" title="IBU SILLA, film still" />
+                                        <img src="images/silla10.png" alt="" title="IBU SILLA, film still" />
+    <img src="images/silla5.png" alt="" title="IBU SILLA, film still" />
+        <img src="images/silla12.png" alt="" title="IBU SILLA, film still" />
+            <img src="images/silla13.png" alt="" title="IBU SILLA, film still" />
+                <img src="images/silla14.png" alt="" title="IBU SILLA, film still" />
+                <img src="images/silla15.jpg" alt="" title="IBU SILLA, film still" />
+                    <img src="images/silla16.png" alt="" title="IBU SILLA, film still" />
+                        <img src="images/silla17.png" alt="" title="IBU SILLA, film still" />
+                            <img src="images/silla18.png" alt="" title="IBU SILLA, film still" />
+                            <img src="images/silla19.png" alt="" title="IBU SILLA, film still" />
+                                <img src="images/silla20.png" alt="" title="IBU SILLA, film still" />
+</div>
+
+
+
+<div id="content">
+
+<h1 hidden> <a href="selected_works_index.html"> > to selected works</a> </h1>
+<h2>IBU SILLA</h2>
+
+<div id="Spalte_1">
+<p>2021 <br>
+4-channel video installation <br>
+00:48:40, 19:6, HD, loop, stereo <br><br>
+While researching on colonial entanglements and histories of Central Switzerland I came across the (around 15 boxes full of) diaries of a Swiss mercenary, Alois Wyrsch (also called „Borneo Louis“), in the historical archive of Stans. Wyrsch was in Borneo (Banjarmasin) from 1816 and returned to Switzerland in 1832, with two of his children, a son and a daughter, who’s mother was indigenous. The mother, called Johanna, Ibu Silla, or Belle was left behind or never arrived to Switzerland. The son, Alois Wyrsch II., became the first Swiss Federal Council of Color in 1974.
+All the parts in the diaries where she would be mentioned are censored, cut out or blacked out, probably by himself. The reasons for the censorship can only be speculated about. This is what I‘m doing with this project: emphasizing the gaps by speculating on possible biographies of „Johanna, Silla, Belle“ by means of questions and ‚scraping‘: subtractive drawing. I‘m trying to open up possibilities for her to be recognized as a multiplicity of „potentialities“ in the literal and „mental archives“. Documentary material from the archives is being more and more revealed thereby.
+<br>
+Given the premise that history is produced and shaped by (white) men, this larger body of work around Ibu Silla attempts to propose counternarratives, hopefully triggering and opening up some space for para-histories and multiperspectives.
+<br><br><br>////////<br><br><br>
+
+THIS IS MY LANDSCAPE, THIS IS MY LANDSCAPE FOR YOU, THIS IS MY LANDSCAPE FOR YOU AND I'M WEARING SPECIAL GLASSES
+<br> 2021 <br>
+virtual reality video installation <br>
+HD, 3D, 180°, 06:42, loop, stereo <br><br>
+Part of the body of work around Ibu Silla, this work thematizes the gaze, the wandering gaze, the subjective gaze. While travelling through different archives via the virtual reality 3D-technology, one sometimes catches a hint of an animated outline of a dancing person “travelling through time and space” with us, looking at us looking at ‘her’, being constantly reconstructed. The installation reflects on our own gaze and complexity of perspectives.
+	</p>
+	</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+html, body  {
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: auto;
+}
+
+
+
+body {font-family: Verdana, sans-serif;
+	}
+
+/* hacks for gallery */
+#Spalte_1 {
+    width: 100%;
+}
+
+#hintergrund-gallery {
+    position: relative;
+    cursor: pointer;
+}
+
+#hintergrund-gallery > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+
+    transition: 0.25s;
+}
+#hintergrund-gallery > img.show {
+    position: static;
+     opacity: 1;
+}
+
+/* width angepasst */
+#content {
+position: fixed;
+top: 0;
+left: 0;
+width: 30%;
+height: 100%;
+z-index: 2;
+overflow: auto;
+}
+
+/*responsive-ness, put content section below gallery*/
+@media (max-width: 900px) {
+    #content {
+        position: relative;
+        top: auto;
+        width: 100%; }
+}
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {font-size: 11px}
+
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- PART 3 GALLERY-->
+<script>
+
+var index = 1,
+    total = document.querySelectorAll('#hintergrund-gallery > img').length;
+
+    console.log(total)
+
+document.querySelector('#hintergrund-gallery').addEventListener('click', function(){
+    document.querySelector('#hintergrund-gallery img.show').classList.remove('show');
+    index++;
+
+    if(index > total){
+        index = 1;
+    }
+    document.querySelector('#hintergrund-gallery img:nth-child('+index+')').classList.add('show');
+})
+
+</script>
+
+</body>
+</html>
+
+
+
+	</div>
+
+
+</body>
+</html>

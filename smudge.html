@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>neutral background</title>
+<link href="selected_works.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- PART 1 GALLERY -->
+<div id="hintergrund-gallery">
+    <img class="show" src="images/smudge0.jpg" alt="" title="Smudge, the messenger –, exhibition view" />
+    <img src="images/smudge1.jpg" alt="" title="Smudge, the messenger –, exhibition view" />
+                <img src="images/smudge4.jpg" alt="" title="Smudge, the messenger –, exhibition view" />
+                    <img src="images/smudge5.jpg" alt="" title="Smudge, the messenger –, exhibition view" />
+                        <img src="images/smudge6.jpg" alt="" title="Smudge, the messenger –, exhibition view" />
+                            <img src="images/smudge7.jpg" alt="" title="Smudge, the messenger –, exhibition view" />
+                                <img src="images/smudge8.jpg" alt="" title="Smudge, the messenger –, exhibition view" />
+                                    <img src="images/smudge9.jpg" alt="" title="Smudge, the messenger –, exhibition view" />
+                                        <img src="images/smudge10.jpg" alt="" title="Smudge, the messenger –, exhibition view" />
+                                            <img src="images/smudge11.jpg" alt="" title="Smudge, the messenger –, film still" />
+                                            <img src="images/smudge12.png" alt="" title="Smudge, the messenger –, film still" />
+                                            <img src="images/smudge13.png" alt="" title="Smudge, the messenger –, film still" />
+                                            <img src="images/smudge14.png" alt="" title="Smudge, the messenger –, film still" />
+                                            <img src="images/smudge15.png" alt="" title="Smudge, the messenger –, film still" />
+                                            <img src="images/smudge16.jpg" alt="" title="Smudge, the messenger –, exhibition view" />
+
+</div>
+
+
+
+<div id="content">
+
+<h1 hidden> <a href="selected_works_index.html"> > to selected works</a> </h1>
+<h2>Smudge, the messenger – </h2>
+
+<div id="Spalte_1">
+<p>2021 <br>
+DUELL<br>
+(collective with Amélie Bodenmann)<br>
+<em>Ausstellungsraum Klingental, Basel</em><br><br>
+
+How is a language constructed beyond cultural references? DUELL
+is playing with the hypothesis that a code for extraterrestrial
+communication would consist of entropy of material, of
+distribution of points, of a rhythmic arrangement of objects, of
+alternating density of mass.<br><br>
+The cat named Smudge is an actor in interwoven experimental
+arrangements and grids. Smudge, the messenger - attempts a
+language that is inscribing itself into the environment.
+	</p>
+	</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+html, body  {
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: auto;
+}
+
+
+
+body {font-family: Verdana, sans-serif;
+	}
+
+/* hacks for gallery */
+#Spalte_1 {
+    width: 100%;
+}
+
+#hintergrund-gallery {
+    position: relative;
+    cursor: pointer;
+}
+
+#hintergrund-gallery > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+
+    transition: 0.25s;
+}
+#hintergrund-gallery > img.show {
+    position: static;
+     opacity: 1;
+}
+
+/* width angepasst */
+#content {
+position: fixed;
+top: 0;
+left: 0;
+width: 30%;
+height: 100%;
+z-index: 2;
+overflow: auto;
+}
+
+/*responsive-ness, put content section below gallery*/
+@media (max-width: 900px) {
+    #content {
+        position: relative;
+        top: auto;
+        width: 100%; }
+}
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {font-size: 11px}
+
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- PART 3 GALLERY-->
+<script>
+
+var index = 1,
+    total = document.querySelectorAll('#hintergrund-gallery > img').length;
+
+    console.log(total)
+
+document.querySelector('#hintergrund-gallery').addEventListener('click', function(){
+    document.querySelector('#hintergrund-gallery img.show').classList.remove('show');
+    index++;
+
+    if(index > total){
+        index = 1;
+    }
+    document.querySelector('#hintergrund-gallery img:nth-child('+index+')').classList.add('show');
+})
+
+</script>
+
+</body>
+</html>
+
+
+
+	</div>
+
+
+</body>
+</html>
