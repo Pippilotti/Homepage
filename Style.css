@@ -257,7 +257,15 @@ p {
 }
 
 
+img {
+/*   padding: 0;
+    display: block;
+    margin: 0 auto; */
+    max-width: 55%;
+    max-height: 20%;
 
+
+}
 
 
 /* CSS Document */
