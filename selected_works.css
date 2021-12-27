@@ -152,8 +152,8 @@ h1 {align-content: center;
 
 p {
 	font-size: 12.5px;
-	background-color: rgba(231,255,20,0.70);
-	color: black;
+	background-color: rgba(255,255,255,0.70);
+	color: #000066; //dark blue
 	padding: 12px;
 	margin-right: 24px;
 	margin-left: 24px;
