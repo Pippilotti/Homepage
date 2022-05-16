@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dear grandfather</title>
+<link href="selected_works.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- PART 1 GALLERY -->
+<div id="hintergrund-gallery">
+    <img class="show" src="images/grandfather1.png" alt="" title="Dear grandfather, film still" />
+       <img src="images/grandfather2.png" alt="" title="Dear grandfather, film still" />
+        <img src="images/grandfather3.png" alt="" title="Dear grandfather, film still" />
+                                <img src="images/grandfather6.png" alt="" title="Dear grandfather, film still" />
+                                                <img src="images/grandfather7.png" alt="" title="Dear grandfather, film still" />
+</div>
+
+
+
+<div id="content">
+
+<h1 hidden> <a href="selected_works_index.html"> > to selected works</a> </h1>
+<h2>Dear grandfather</h2>
+
+<div id="Spalte_1">
+<p>
+2021 <br>
+video<br>
+16:9, 7:00, HD, stereo, loop <br><br>
+«Of course Im against it, too» – In 1975,
+the artist’s grandfather has been stating his
+opinion on the women’s right to vote (on a communal level) on
+Swiss national tv. That footage has only been found
+by the artist in 2021, 14 years after his death.
+How to deal with contradictory feelings
+towards beloved family members with
+whom one dissents fundamentally about basic
+political matters, worldviews and urgencies?
+This piece is an investigation on such tensions: the
+video works with and through the tv show’s footage.
+Like traces of a letter or a ‹map of
+thought›, writings and drawings are directly
+being marked on the grandfather’s face, onto
+the surface of the very moment of his «painful»
+statements. The image is being repeated and zoomed
+in excessively attempting to achieve opacity and
+proximity, an understanding that might never be
+obtained. Thus, the question processualy shifts
+from "How to relate?" towards: "How to deal with
+non-relating?"
+	</p>
+	</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+html, body  {
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: auto;
+}
+
+
+
+body {font-family: Verdana, sans-serif;
+	}
+
+/* hacks for gallery */
+#Spalte_1 {
+    width: 100%;
+}
+
+#hintergrund-gallery {
+    position: relative;
+    cursor: pointer;
+}
+
+#hintergrund-gallery > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+
+    transition: 0.25s;
+}
+#hintergrund-gallery > img.show {
+    position: static;
+     opacity: 1;
+}
+
+/* width angepasst */
+#content {
+position: fixed;
+top: 0;
+left: 0;
+width: 30%;
+height: 100%;
+z-index: 2;
+overflow: auto;
+}
+
+/*responsive-ness, put content section below gallery*/
+@media (max-width: 900px) {
+    #content {
+        position: relative;
+        top: auto;
+        width: 100%; }
+}
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {font-size: 11px}
+
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- PART 3 GALLERY-->
+<script>
+
+var index = 1,
+    total = document.querySelectorAll('#hintergrund-gallery > img').length;
+
+    console.log(total)
+
+document.querySelector('#hintergrund-gallery').addEventListener('click', function(){
+    document.querySelector('#hintergrund-gallery img.show').classList.remove('show');
+    index++;
+
+    if(index > total){
+        index = 1;
+    }
+    document.querySelector('#hintergrund-gallery img:nth-child('+index+')').classList.add('show');
+})
+
+</script>
+
+</body>
+</html>
+
+
+
+	</div>
+
+
+</body>
+</html>
