@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>global earth powder trace</title>
+<link href="selected_works.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- PART 1 GALLERY -->
+<div id="hintergrund-gallery">
+    <img class="show" src="images/global_still1.png" alt="" title="global earth powder trace, film still" />
+        <img src="images/global_still2.png" alt="" title="global earth powder trace, film still" />
+                <img src="images/global_still3.png" alt="" title="global earth powder trace, film still" />
+</div>
+
+
+
+<div id="content">
+
+<h1 hidden> <a href="selected_works_index.html"> > to selected works</a> </h1>
+<h2><font color=yellow>global earth powder trace</font></h2>
+
+<div id="Spalte_1">
+<p>2022 <br>
+video installation with stroboscopic light<br>
+00:21:47, 16:9, HD, loop, stereo <br>
+<em>Espace Libre, Biel/Bienne</em><br><br>
+GLOBAL EARTH POWDER TRACE is an exhibition about the contextualisation of the subject in its personal histories. The flickering universe embedded in a single pixel. About causal networks, about a caterpillar possibly changing everything. About shade and how light is made by it. About gaps and how the mute is speaking. About rocks becoming dust becoming rock, and then the rock – one tiny witness of planetary history – will be excavated by archaelogists; but who are those archeologists, do they wear glasses, do they carry binoculars, are they a group looking at the story from multiple sides?
+<br><br>
+In the beginning, a short film is being accelerated: ‚Powers of Ten‘ was produced by Charles and Ray Eames in 1977, moving a fictional camera up to the maximum macro-image and into the maximum micro-image that has been „scientifically known“ at the time.
+<br><br>
+Later, we see images of cutouts in a mercenary’s diaries. Alois Wyrsch was a civil and military governor for the Dutch crown in Borneo from 1816 and returned to Switzerland in 1832, with two of his children, a son and a daughter, who’s mother was indigenous, probably his Nyai: his slave. The mother, Ibu Silla, was left behind or never arrived to Switzerland. The son, Alois Wyrsch II., became the first Swiss Federal Council of Color in 1860. All the parts in the diaries where she would be mentioned are censored, cut out or blacked out.
+<br><br>
+In 1975, the artist’s grandfather has been stating his opinion on the women’s right to vote (on the municipal level) on Swiss national tv. That footage has only been found by the artist in 2021, 14 years after his death. Like traces of a letter or a ‹map of thought›, the grandfather’s face is being marked, but never permeated. Thus, the question processualy shifts from „How to relate?“ towards: „How to deal with non-relating?“
+<br><br>
+Finally: What if there was a Swiss indigenous people consisting only of lesbians? Having come of age in a context where right populist politics get most of the votes in Switzerland, a place of lesbian invisibility, a place where the notion of „the lesbian“ has been used as an insult only; the artist is setting up a thought experiment: the nationalist‘s fantasy of a "Swiss race“ that has never and will never exist, is being twisted: the „Swiss race“ is being imagined as a „lesbian race“ living in the core forest (“Kernwald” ist the mythical forest localized at the place of the artist’s coming of age). This imagination reflects on fantasies of homogenous societies; the essentialism is being exagerrated and a species is being explored in the forest at night.
+<br><br>
+At the opening, Sara Käser is playing her favorite sounds and songs on a cello.
+That performance will be recorded and sporadically played as audio during the opening times.
+<br><br>
+There is a series of two drawings on canvas leaning at the wall, on the stones. They are called "I saw convex equatorial deserts and each one of their grains of sand.“
+<br><br><br><em>MORE IMAGES UPCOMING</em>
+	</p>
+	</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+html, body  {
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: auto;
+}
+
+
+
+body {font-family: Verdana, sans-serif;
+	}
+
+/* hacks for gallery */
+#Spalte_1 {
+    width: 100%;
+}
+
+#hintergrund-gallery {
+    position: relative;
+    cursor: pointer;
+}
+
+#hintergrund-gallery > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+
+    transition: 0.25s;
+}
+#hintergrund-gallery > img.show {
+    position: static;
+     opacity: 1;
+}
+
+/* width angepasst */
+#content {
+position: fixed;
+top: 0;
+left: 0;
+width: 30%;
+height: 100%;
+z-index: 2;
+overflow: auto;
+}
+
+/*responsive-ness, put content section below gallery*/
+@media (max-width: 900px) {
+    #content {
+        position: relative;
+        top: auto;
+        width: 100%; }
+}
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {font-size: 11px}
+
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- PART 3 GALLERY-->
+<script>
+
+var index = 1,
+    total = document.querySelectorAll('#hintergrund-gallery > img').length;
+
+    console.log(total)
+
+document.querySelector('#hintergrund-gallery').addEventListener('click', function(){
+    document.querySelector('#hintergrund-gallery img.show').classList.remove('show');
+    index++;
+
+    if(index > total){
+        index = 1;
+    }
+    document.querySelector('#hintergrund-gallery img:nth-child('+index+')').classList.add('show');
+})
+
+</script>
+
+</body>
+</html>
+
+
+
+	</div>
+
+
+</body>
+</html>
