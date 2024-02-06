@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ich bin frei und mir ist schlecht</title>
+<link href="selected_works.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- PART 1 GALLERY -->
+<div id="hintergrund-gallery">
+    <img class="show" src="images/frei/Ich-bin-so-frei00.jpg" alt="" title="Ich bin frei und mir ist schlecht, Photo: Tanja Schwarz" />
+    <img src="images/frei/Ich-bin-so-frei01.jpg" title="Zine 1, excerpt" />
+    <img src="images/frei/Ich-bin-so-frei02.jpg" title="Zine 1, excerpt" />
+    <img src="images/frei/Ich-bin-so-frei03.jpg" title="Zine 1, excerpt" />
+    <img src="images/frei/Ich-bin-so-frei04.jpg" title="Zine 1, excerpt" />
+    <img src="images/frei/Ich-bin-so-frei05.jpg" title="Zine 1, excerpt" />
+    <img src="images/frei/Ich-bin-so-frei06.jpg" title="Zine 1, excerpt" />
+    <img src="images/frei/Ich-bin-so-frei07.jpg" title="Zine 1, excerpt" />
+    <img src="images/frei/Ich-bin-so-frei08.jpg" title="Zine 1, excerpt" />
+    <img src="images/frei/Ich-bin-so-frei09.jpg" title="Zine 1, excerpt" />
+
+
+</div>
+
+
+
+<div id="content">
+
+<h1 hidden> <a href="selected_works_index.html"> > to selected works</a> </h1>
+<h2>Ich bin frei und mir ist schlecht</h2>
+
+<div id="Spalte_1">
+<p>2023 <br>
+Newspaper <br>
+Released in September 2023 <br>
+Concept, texts and drawings: Tanja Schwarz & Olivia Abächerli <br>
+Graphic Design: Viola Zimmermann & Loris Aregger <br>
+Language: German <br>
+Dimensions: 35 x 50cm, 24 pages <br>
+Edition: 300 <br>
+<br>
+The newspaper is an insight to a dialogue between Tanja Schwarz and Olivia Abächerli that started in 2021 and consists of both texts and drawings that have been sent back and forth. <br>
+
+	</p>
+	</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+html, body  {
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: auto;
+}
+
+
+
+body {font-family: Verdana, sans-serif;
+	}
+
+/* hacks for gallery */
+#Spalte_1 {
+    width: 100%;
+}
+
+#hintergrund-gallery {
+    position: relative;
+    cursor: pointer;
+}
+
+#hintergrund-gallery > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+
+    transition: 0.25s;
+}
+#hintergrund-gallery > img.show {
+    position: static;
+     opacity: 1;
+}
+
+/* width angepasst */
+#content {
+position: fixed;
+top: 0;
+left: 0;
+width: 30%;
+height: 100%;
+z-index: 2;
+overflow: auto;
+}
+
+/*responsive-ness, put content section below gallery*/
+@media (max-width: 900px) {
+    #content {
+        position: relative;
+        top: auto;
+        width: 100%; }
+}
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {font-size: 11px}
+
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- PART 3 GALLERY-->
+<script>
+
+var index = 1,
+    total = document.querySelectorAll('#hintergrund-gallery > img').length;
+
+    console.log(total)
+
+document.querySelector('#hintergrund-gallery').addEventListener('click', function(){
+    document.querySelector('#hintergrund-gallery img.show').classList.remove('show');
+    index++;
+
+    if(index > total){
+        index = 1;
+    }
+    document.querySelector('#hintergrund-gallery img:nth-child('+index+')').classList.add('show');
+})
+
+</script>
+
+</body>
+</html>
+
+
+
+	</div>
+
+
+</body>
+</html>
