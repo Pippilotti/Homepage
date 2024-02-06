@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ibu Silla</title>
+<link href="selected_works.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- PART 1 GALLERY -->
+<div id="hintergrund-gallery">
+    <img class="show" src="images/ibusilla_doku_jpegs/ibusilla_1.jpeg" alt="" title="Ibu Silla Buch Projekt" />
+    <img src="images/ibusilla_doku_jpegs/ibusilla_2.jpeg" alt="" title="Ibu Silla Buch Projekt" />
+    <img src="images/ibusilla_doku_jpegs/ibusilla_3.jpeg" alt="" title="Ibu Silla Buch Projekt" />
+    <img src="images/ibusilla_doku_jpegs/ibusilla_4.jpeg" alt="" title="Ibu Silla Buch Projekt" />
+    <img src="images/ibusilla_doku_jpegs/ibusilla_5.jpeg" alt="" title="Ibu Silla Buch Projekt" />
+    <img src="images/ibusilla_doku_jpegs/ibusilla_6.jpeg" alt="" title="Ibu Silla Buch Projekt" />
+
+</div>
+
+
+
+<div id="content">
+
+<h1 hidden> <a href="selected_works_index.html"> > to selected works</a> </h1>
+<h2>Ibu Silla</h2>
+
+<div id="Spalte_1">
+<p>2023 <br>
+published by <a href="https://www.editionfink.ch/">edition fink, Contemporary Art publishers</a> <br>
+  Issued by the Kommission für Kunst und Architektur des Kantons Bern <br>
+  Concept and editing: Olivia Abächerli and Georg Rutishauser <br>
+  Text and introduction: Olivia Abächerli <br>
+  German copyediting: Ilka Backmeister-Collacott <br>
+  English translation: Catherine Kerkhoff-Saxon <br>
+  English copyediting: Sarah Quigley <br>
+  Design and production: Atelier Georg Rutishauser, Zurich <br>
+  Printing and binding: druckmanufaktur, Urdorf, Stalgra, Regensdorf, Buchbinderei Grolimund, Reinach <br>
+  ISBN 978-3-03746-264-5 (German edition) <br>
+  ISBN 978-3-03746-265-2 (English edition) <br>
+
+	</p>
+	</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+html, body  {
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: auto;
+}
+
+
+
+body {font-family: Verdana, sans-serif;
+	}
+
+/* hacks for gallery */
+#Spalte_1 {
+    width: 100%;
+}
+
+#hintergrund-gallery {
+    position: relative;
+    cursor: pointer;
+}
+
+#hintergrund-gallery > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+
+    transition: 0.25s;
+}
+#hintergrund-gallery > img.show {
+    position: static;
+     opacity: 1;
+}
+
+/* width angepasst */
+#content {
+position: fixed;
+top: 0;
+left: 0;
+width: 30%;
+height: 100%;
+z-index: 2;
+overflow: auto;
+}
+
+/*responsive-ness, put content section below gallery*/
+@media (max-width: 900px) {
+    #content {
+        position: relative;
+        top: auto;
+        width: 100%; }
+}
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {font-size: 11px}
+
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- PART 3 GALLERY-->
+<script>
+
+var index = 1,
+    total = document.querySelectorAll('#hintergrund-gallery > img').length;
+
+    console.log(total)
+
+document.querySelector('#hintergrund-gallery').addEventListener('click', function(){
+    document.querySelector('#hintergrund-gallery img.show').classList.remove('show');
+    index++;
+
+    if(index > total){
+        index = 1;
+    }
+    document.querySelector('#hintergrund-gallery img:nth-child('+index+')').classList.add('show');
+})
+
+</script>
+
+</body>
+</html>
+
+
+
+	</div>
+
+
+</body>
+</html>
