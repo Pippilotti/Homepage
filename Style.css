@@ -100,9 +100,9 @@
 
 
 @font-face {
-    font-family: 'nudles-bold';
-    src: url('fonts/webfonts/nudles-bold.woff2') format('woff2'),
-         url('fonts/webfonts/nudles-bold.woff') format('woff');
+    font-family: 'nudles_bold';
+    src: url('fonts/webfonts/Nudles-Bold.woff2') format('woff2'),
+         url('fonts/webfonts/Nudles-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -164,7 +164,7 @@ nav {
 /*    color: #DFCF0D; */
     color: black;
 	font-size: 64px;
-	font-family: 'bluu_nextbold', Georgia, serif;
+	font-family: 'nudles_bold', Georgia, serif;
 	font-weight: 600;
 	position: fixed;
 	top: 50;
